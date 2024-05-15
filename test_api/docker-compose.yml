@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  backend:
+    image: ${DOCKER_REGISTRY-}testapi
+    build:
+      context: .
+      dockerfile: test_api/Dockerfile
+
+  client:
+    image: client
+    build:
+      context: ./test-client
+      dockerfile: Dockerfile
