@@ -12,3 +12,5 @@ services:
     build:
       context: ./test-client
       dockerfile: Dockerfile
+  proxy:
+    image: nginx:mainline
