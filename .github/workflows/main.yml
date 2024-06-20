@@ -22,9 +22,6 @@ jobs:
           username: sashaperekhrest
           password: Sasha548gtr
 
-      - name: Install dependecies
-        run: npm ci
-
       - name: Build and push Docker images
         run: |
           docker-compose -f test_api/docker-compose.yml build
