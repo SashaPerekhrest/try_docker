@@ -3,7 +3,6 @@ WORKDIR /app
 COPY . .
 RUN apk add --update nodejs nodejs-npm
 RUN npm install -g npm
-RUN npm ci
 COPY . /app
 RUN npm run build
 CMD ["npm", "start"]
